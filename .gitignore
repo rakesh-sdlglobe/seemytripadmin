@@ -1,0 +1,30 @@
+# Ignore Node modules in both root and server folder
+node_modules/
+server/node_modules/
+
+# Ignore logs
+logs/
+*.log
+server/logs/
+
+# Ignore .env files for both the React app and server
+.env
+server/.env
+
+# Ignore build directories
+build/
+dist/
+server/build/
+server/dist/
+
+# Ignore coverage and test reports
+coverage/
+server/coverage/
+
+# Ignore other system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
