@@ -1,6 +1,6 @@
 const User = require("../models/user");
+const Traveller = require("../models/traveller")
 const sequelize = require("../utils/database");
-const { Booking, Train, Station, Route } = require("../models");
 
 exports.getRecentUsers = async (req, res) => {
   try {
@@ -109,3 +109,51 @@ WHERE
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
+
+exports.addTraveller = async (req, res) => {
+  try {
+    let { firstname, lastname, mobile, dob } = req.body;
+    
+    const userId = req.user; 
+
+    if (!firstname || !lastname || !mobile || !userId) {
+      return res.status(400).json({ message: "Please provide all required fields: firstName, lastName, mobile, userId" });
+    }
+    const traveller = await Traveller.create({
+      firstname,
+      lastname,
+      mobile,
+      dob,
+      userId: req.user,
+    });
+
+    res.status(200).json({
+      message: 'Traveller added successfully',
+      traveller
+    });
+  } catch (error) {
+    console.error('Error details:', error);
+    res.status(500).json({ message: 'Internal server error', error: error.message });
+  }
+};
+
+exports.getTravelers = async (req, res) => {
+  try {
+    const userId = req.user;
+    // Use raw SQL query with parameterized inputs
+    const travelers = await sequelize.query(
+      'SELECT id, firstname, lastname, mobile, dob FROM travellers WHERE userId = :userId',
+      {
+        replacements: { userId: userId },
+        type: sequelize.QueryTypes.SELECT
+      }
+    );
+
+    res.status(200).json(travelers);
+  } catch (error) {
+    console.error("Error fetching travelers:", error);
+    res.status(500).json({ message: "Internal server error" }); 
+  }
+};
+
+

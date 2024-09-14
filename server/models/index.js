@@ -6,9 +6,10 @@ const Route = require('./route');
 const Seat = require('./seat');
 const Booking = require('./booking');
 const Payment = require('./payment');
+const Traveller = require('./traveller')
 
 const syncModels = async () => {
-  await sequelize.sync({ force: true });
+  await sequelize.sync({ alter: true });
   console.log("All models were synchronized successfully.");
 };
 
@@ -20,5 +21,6 @@ module.exports = {
   Seat,
   Booking,
   Payment,
+  Traveller,
   syncModels
 };
