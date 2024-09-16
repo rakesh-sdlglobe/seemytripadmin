@@ -19,7 +19,7 @@ const ReservationStats = ()=> {
 			<Tab.Container defaultActiveKey="Monthly">
 				<div className="card">
 					<div className="card-header border-0 flex-wrap">
-						<h4 className="fs-20">Reservation Stats</h4>
+						<h4 className="fs-20">Success and Failed Ticket Stats</h4>
 						<div className="card-action coin-tabs">
 							<Nav as="ul" className="nav nav-tabs" >
 								<Nav.Item as="li" className="nav-item">
@@ -40,14 +40,14 @@ const ReservationStats = ()=> {
 								<svg className="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
 								  <rect  width="13" height="13" fill="#135846"/>
 								</svg>
-								Check In
+								Success Tickets
 							</span>
 							<span className="fs-16 font-w600 me-4">23,451 <small className="text-success fs-12 font-w400">+0.4%</small></span>
 							<span className="me-sm-5 ms-0 font-w500">
 								<svg className="me-1" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
 								  <rect  width="13" height="13" fill="#E23428"/>
 								</svg>
-								Check Out
+								Failed Tickets
 							</span>
 							<span className="fs-16 font-w600">20,441</span>
 						</div>

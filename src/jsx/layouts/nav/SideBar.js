@@ -175,8 +175,8 @@ const SideBar = () => {
             </div>
           </div>
           <div className="copyright">
-            <p className="text-center"><strong>Travl Hotel Admin Dashboard</strong> © {d.getFullYear()} All Rights Reserved</p>
-            <p className="fs-12 text-center">Made with <span className="heart" onClick={()=>heartBlast()}></span> by DexignLab</p>
+            <p className="text-center"><strong>See My Trip Admin Dashboard</strong> © {d.getFullYear()} All Rights Reserved</p>
+            {/* <p className="fs-12 text-center">Made with <span className="heart" onClick={()=>heartBlast()}></span> by DexignLab</p> */}
           </div>
       </PerfectScrollbar>
     </div>

@@ -7,12 +7,12 @@ class ChartBarApex3 extends React.Component {
 		this.state = {
 			series: [
 				{
-					name: 'Net Profit',
+					name: 'Success Tickets',
 					data: [15, 70, 15, 55, 90, 80, 25 ],
 					//radius: 12,	
 				}, 
 				{
-					name: 'Revenue',
+					name: 'Failed Tickets',
 					data: [30, 5, 40, 60, 65, 15, 35]
 				}, 
 				
