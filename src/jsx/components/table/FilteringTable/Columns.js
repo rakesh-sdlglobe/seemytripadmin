@@ -34,9 +34,9 @@ export const COLUMNS = [
 		Filter: ColumnFilter,
 	},
 	{
-		Header : 'Country',
-		Footer : 'Country',
-		accessor: 'country',
+		Header : 'State',
+		Footer : 'State',
+		accessor: 'State',
 		Filter: ColumnFilter,
 	},
 	{

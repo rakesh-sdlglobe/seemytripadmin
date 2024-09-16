@@ -55,7 +55,7 @@ const Header = ({ onNote }) => {
 					  : finalName.join(" ")}
 				</div>
             </div>
-			<div className="nav-item d-flex align-items-center">
+			{/* <div className="nav-item d-flex align-items-center">
 				<div className="input-group search-area">
 					<input type="text" 
 						className={`form-control ${searchBut ? "active" : ""}`}
@@ -65,10 +65,10 @@ const Header = ({ onNote }) => {
 						<Link to={"#"}><i className="flaticon-381-search-2"></i></Link>
 					</span>
 				</div>
-			</div> 
+			</div>  */}
             <ul className="navbar-nav header-right">
 					
-				<Dropdown
+				{/* <Dropdown
 					as="li"
 					className="nav-item dropdown notification_dropdown "
 				  >
@@ -85,8 +85,8 @@ const Header = ({ onNote }) => {
 						</svg>
 						<span className="badge light text-white bg-primary rounded-circle">76</span>
 					</Dropdown.Toggle>
-				</Dropdown>	
-				<Dropdown as="li" className="nav-item dropdown notification_dropdown">
+				</Dropdown>	 */}
+				{/* <Dropdown as="li" className="nav-item dropdown notification_dropdown">
 					<Dropdown.Toggle className="nav-link i-false c-pointer" variant="" as="a">
 						<svg xmlns="http://www.w3.org/2000/svg" width="19.375" height="24" viewBox="0 0 19.375 24">
 						  <g id="_006-notification" data-name="006-notification" transform="translate(-341.252 -61.547)">
@@ -197,8 +197,8 @@ const Header = ({ onNote }) => {
 						See all notifications <i className="ti-arrow-right" />
 					  </Link>
 					</Dropdown.Menu>
-                </Dropdown>
-			  <Dropdown
+                </Dropdown> */}
+			  {/* <Dropdown
                 as="li"
                 className="nav-item  notification_dropdown "
               >
@@ -316,7 +316,7 @@ const Header = ({ onNote }) => {
                     </div>
                   </PerfectScrollbar>
                 </Dropdown.Menu>
-              </Dropdown>
+              </Dropdown> */}
 			   
 				<Dropdown as="li" className="nav-item dropdown header-profile">
 					<Dropdown.Toggle variant="" as="a" className="nav-link i-false c-pointer">

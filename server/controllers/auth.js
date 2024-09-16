@@ -71,7 +71,8 @@ exports.login = async (req, res) => {
 
 exports.deleteUser = async (req, res) => {
   try {
-    const { userId } = req.user;
+    const  userId  = req.user;
+    
     const { password } = req.body;
 
     const user = await User.findByPk(userId);

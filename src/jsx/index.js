@@ -110,6 +110,11 @@ import Error500 from "./pages/Error500";
 import Error503 from "./pages/Error503";
 import Setting from "./layouts/Setting";
 import { ThemeContext } from "../context/ThemeContext";
+import HomeTrain from "./components/Dashboard/TrainDashboard";
+import HomeFlights from "./components/Dashboard/Flights";
+import  UserProfiles  from "./components/Dashboard/UserProfiles";
+import BookingInformation from "./components/Dashboard/BookingInformation";
+
 
 const Markup = () => {
   // const { menuToggle } = useContext(ThemeContext);
@@ -117,6 +122,8 @@ const Markup = () => {
     /// Dashboard
     { url: "", component: <Home/> },
     { url: "dashboard", component: <Home/> },
+    { url: "dashboard-train", component: <HomeTrain/> },
+    { url: "dashboard-flights", component: <HomeFlights/> },
     { url: "dashboard-dark", component: <DashboardDark/> },
     { url: "guest-list", component: <GuestList/> },
     { url: "guest-details", component: <GuestDetails/> },
@@ -133,8 +140,10 @@ const Markup = () => {
     { url: "horizontal-modern-sidebar", component: <Theme5/> },
     { url: "modern-sidebar", component: <Theme6/> },
 	
-	/// Apps
+	/// Management
     { url: "app-profile", component: <AppProfile/> },
+    { url: "userprofile", component: <UserProfiles/> },
+    { url: "bookinginformation", component: <BookingInformation/> },
     { url: "post-details", component: <PostDetails/> },
     { url: "email-compose", component: <Compose/> },
     { url: "email-inbox", component: <Inbox/> },

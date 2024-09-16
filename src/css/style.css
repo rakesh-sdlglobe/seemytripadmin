@@ -26388,11 +26388,11 @@ table.dataTable.display tbody td {
 
 .booking:hover {
   box-shadow: 0 1.188rem 1.188rem rgba(0, 0, 0, 0.16) !important; }
-  .booking:hover .booking-status span {
+  /* .booking:hover .booking-status span {
     background: var(--primary);
-    transition: all .5s ease-in-out; }
-    .booking:hover .booking-status span svg path {
-      fill: #fff; }
+    transition: all .5s ease-in-out; } */
+    /* .booking:hover .booking-status span svg path {
+      fill: #fff; } */
 
 .event-calender .table-condensed thead tr:first-child {
   position: absolute;

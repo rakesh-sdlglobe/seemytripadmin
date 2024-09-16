@@ -45,7 +45,7 @@ const Setting = () => {
   } = useContext(ThemeContext);
   return (
 	<>
-		<div className={`sidebar-right ${settingToggle ? "show" : ""}`}>
+		{/* <div className={`sidebar-right ${settingToggle ? "show" : ""}`}>
 			<div className="bg-overlay" onClick={() => setSettingToggle(!settingToggle)}></div>
 			<Link to="#" className="sidebar-right-trigger wave-effect wave-effect-x" onClick={() => setSettingToggle(!settingToggle)} >
 				<span><i className="fa fa-cog fa-spin" /></span>
@@ -309,7 +309,7 @@ const Setting = () => {
 					<Link to={"#"}  className="text-primary"> documentation.</Link>
 				</div>
 			</div>
-		</div>
+		</div> */}
 	</>
   );
 };

@@ -158,17 +158,15 @@ exports.getTravelers = async (req, res) => {
 
 exports.removeTraveller = async (req, res) => {
   try {
-    const { id } = req.params;
-    const userId = req.user; // Assuming userId is being set in your authentication middleware
+    const { id } = req.params;  
+    const userId = req.user;
 
-    // Check if the id is provided and valid
     if (!id || !userId) {
       return res.status(400).json({
         message: "Please provide a valid traveller id and user id",
       });
     }
 
-    // Use sequelize to find the traveler first
     const traveller = await Traveller.findOne({
       where: { id, userId },
     });
@@ -179,7 +177,6 @@ exports.removeTraveller = async (req, res) => {
       });
     }
 
-    // If found, remove the traveler
     await traveller.destroy();
 
     res.status(200).json({

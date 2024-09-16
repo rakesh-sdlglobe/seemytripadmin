@@ -9,6 +9,6 @@ router.post('/editProfile', isAuth.token, userController.editUserProfile)
 router.get('/myBookings', isAuth.token, userController.myBookings)
 router.post('/addTraveler', isAuth.token, userController.addTraveller)
 router.get('/getTravelers', isAuth.token, userController.getTravelers)
-router.delete("/traveller/{id}", isAuth.token, userController.removeTraveller);
+router.delete('/traveller/:id', isAuth.token, userController.removeTraveller);
 
 module.exports = router;

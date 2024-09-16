@@ -16,7 +16,7 @@ class ApexPie4 extends React.Component {
             enabled: true,
           },
         },
-        labels: ["VIP", "Reguler", "Exclusive", "Economic"],
+        labels: ["On-Time", "Delayed", "Canceled", "N/A"],
         fill: {
           opacity: 1,
           colors: ["#709fba", "#e23428", "#44814e", "#3693ff"],
