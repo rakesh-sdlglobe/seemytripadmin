@@ -10,4 +10,5 @@ router.post("/login", authController.login);
 
 router.delete("/deleteAccount", isAuth.token, authController.deleteUser);
 
+router.post('/auth/google', authController.googleAuth);
 module.exports = router;
