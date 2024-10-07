@@ -12,7 +12,7 @@ server/logs/
 server/.env
 
 # Ignore build directories
-build/
+
 dist/
 server/build/
 server/dist/
