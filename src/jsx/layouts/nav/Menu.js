@@ -67,13 +67,50 @@ export const MenuList = [
         iconStyle: <i className="fas fa-info-circle"></i>,
         content: [
             {
-                title: 'User Profiles',
-                to: 'userprofile'
+                title:"Train Management",
+                hasMenu:true,
+                content:[
+                    {
+                        title: 'User Profiles',
+                        to: 'userprofile'
+                    },
+                    {
+                        title: 'Booking Information',
+                        to: 'bookinginformation'
+                    },
+                    {
+                        title: 'Booking management',
+                        to: 'bookingmanagement'
+                    },
+                    {
+                        title: 'Train management',
+                        to: 'trainmanagement'
+                    },
+                ]
             },
             {
-                title: 'Booking Information',
-                to: 'bookinginformation'
+                title:"Flight Management",
+                hasMenu:true,
+                content:[
+                    {
+                        title: 'User Profiles',
+                        to: 'flightuserprofile'
+                    },
+                    {
+                        title: 'Booking Information',
+                        to: 'flightbookinginformation'
+                    },
+                    {
+                        title: 'Booking management',
+                        to: 'flightbookingmanagement'
+                    },
+                    {
+                        title: 'Flight management',
+                        to: 'flightmanagement'
+                    },
+                ]
             },
+
             // {
             //     title: 'Edit Profile',
             //     to: 'edit-profile'
@@ -346,7 +383,7 @@ export const MenuList = [
     //                 {
     //                     title: 'Error 403',
     //                     to : 'page-error-403',
-    //                 },
+    //                 }, 
     //                 {
     //                     title: 'Error 404',
     //                     to : 'page-error-404',
